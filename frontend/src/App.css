@@ -1,0 +1,495 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+/* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */
+/* @import "component1.css";   Component-specific stylesheets, if any.   */
+/* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Mulish:ital,wght@0,200;0,300;0,600;1,200;1,300&family=Poiret+One&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Modak&family=Mulish:ital,wght@0,200;0,300;0,600;1,200;1,300&family=Poiret+One&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+/*   ----- Variables  -----  */
+:root {
+  --uncle-lou-red: #C60011;
+  --uncle-lou-red-hover: #FF5765;
+  --light-dusty-blue: #b4c4d9;
+  --light-dusty-blue-trans: #b4c4d9fc;
+  --dusty-blue: #94A1B3;
+  --dark-dusty-blue: #617082;
+  --dark-dusty-blue-trans: #303a46ed;
+  --fly-light-yellow: #F2C230;
+  --fly-light-yellow-hover: #eed078;
+  --marquee-black: #171e27;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {}. */
+  background-color: ;
+  background-image: url(images/uncle-lou-background-resized.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 60% 60%;
+  background-repeat: no-repeat;
+  color: ;
+  font-family: "Mulish", sans-serif;
+  /* Define with at least one font name and its related generic family name.*/
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 0%;
+  max-width: 80%;
+  line-height: 2;
+}
+
+/*  ----- Page layout blocks -----  */
+header,
+footer {
+  background-color: var(--light-dusty-blue-trans);
+  border: 6px solid var(--marquee-black);
+  color: var(--uncle-lou-red);
+  border-radius: 10px;
+  margin: 2% 10%;
+}
+
+header {
+  padding: 1% 5%;
+}
+
+main {
+  background-color: var(--light-dusty-blue-trans);
+  border: 6px solid var(--marquee-black);
+  color: var(--marquee-black);
+  padding: 5%;
+  margin: 2% 10%;
+  border-radius: 10px;
+}
+
+section {}
+
+article {}
+
+#topic1 {}
+
+#topic2 {}
+
+div {}
+
+aside {
+  padding: 1%;
+  margin: 3%;
+  color: var(--marquee-black);
+  border: 2px solid var(--marquee-black);
+  border-radius: 5px;
+  border-collapse: collapse;
+  width: 30%;
+}
+
+footer {
+  font-family: "comfortaa", sans-serif;
+  font-weight: bold;
+  padding: 1% 5%;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+
+
+a:link {
+  color: var(--uncle-lou-red)
+}
+
+a:link.addburger{
+  background-color: var(--fly-light-yellow-hover));
+  border: 5px solid var(--marquee-black);
+  border-radius: 10px;
+  color: var(--marquee-black);
+  margin: 0.5%;
+  padding: 1%;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--fly-light-yellow-hover)
+}
+
+a:active {}
+
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: .25% 0 .25% 0;
+  padding: 1%;
+}
+
+nav a {
+  background-color: var(--light-dusty-blue-trans);
+  border: 5px solid var(--marquee-black);
+  border-radius: 10px;
+  color: var(--uncle-lou-red);
+  margin: 0.5%;
+  padding: 2%;
+  text-decoration: none;
+}
+
+nav a.local-nav-button{
+  background-color: var(--fly-light-yellow);
+  color: var(--marquee-black);
+}
+
+nav a:hover {
+  background-color: var(--uncle-lou-red);
+  color: var(--light-dusty-blue);
+}
+
+.local-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1px;
+  margin: 1%;
+  border: 1px;
+}
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "comfortaa", sans-serif;
+  font-weight: 700;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {
+  font-family: "Mulish";
+  font-style: italic;
+}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {
+  font-family: "Mulish";
+  font-weight: bold;
+}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {
+  padding: 1%;
+  color: var(--marquee-black);
+  border: 2px solid var(--marquee-black);
+  border-radius: 10px;
+/*   border-collapse: collapse; */
+   width: 100%;
+}
+
+table img{
+  height: fit-content;
+  border-radius: 5px;
+  border: 2px solid var(--marquee-black)
+}
+caption {}
+
+thead {}
+
+tbody {}
+
+tfoot {}
+
+tr {}
+
+tr:nth-child(even) {background-color: var(--dark-dusty-blue)}
+
+th, td {
+  /*border: 1px solid var(--light-dusty-blue);*/
+  padding: 1%;
+  border-radius: 5px;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  margin: 10%;
+}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+
+fieldset {
+  border-radius: 10px;
+  padding: 1%;
+  margin-top: 3%;
+}
+
+legend {
+  color: var(--light-dusty-blue);
+  font-size: 22px;
+  font-weight: 500;
+  padding: 1%;
+  border: 2px solid var(--light-dusty-blue);
+  border-radius: 10px;
+}
+
+input,
+button,
+textarea,
+select {
+  font-size: 100%;
+  padding: 1%;
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  background-color: var(--light-dusty-blue-trans);
+}
+
+*:required {
+  border: 2px solid green;
+}
+
+label {
+  display: block;
+  margin-top: 2%;
+  margin-bottom: .5%;
+}
+
+button {
+  padding: 1%;
+}
+
+input {}
+
+input:invalid {
+  border: 3px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input::placeholder {
+  color: darkgray;
+}
+
+input[type=checkbox]:checked+label {
+  color: green;
+  font-style: italic;
+}
+
+input:disabled {
+  background: repeating-linear-gradient(142deg, #CCCCCC, #CCCCCC 4px, #999999 22px);
+}
+
+input:enabled {
+  background: white;
+}
+
+select {}
+
+optgroup {}
+
+option {}
+
+textarea {
+  height: 10%;
+  width: 80%;
+}
+
+output {}
+
+meter {}
+
+progress {}
+
+.required {}
+
+
+/* ----- Media ----- */
+.App-logo {
+    height: 4vmin;
+    pointer-events: none;
+
+  }
+figure {}
+
+figcaption {}
+
+figure img {}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery figure {
+  width: 320px;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid var(--light-dusty-blue);
+  border-radius: 10px;
+}
+
+.gallery figcaption {
+  display: block;
+  padding: 1% 1% 2% 1%;
+}
+
+.gallery img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.floatright {
+  float: right;
+}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
