@@ -51,3 +51,5 @@ At the MongoDB website:
 Use the connection string in `website/app`
 
     In website/app, paste that same connection string into the .env file of your workspace folder.
+
+Finally, run `npm install` and `npm start` in both frontend and backend folders.
